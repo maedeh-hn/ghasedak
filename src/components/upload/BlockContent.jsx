@@ -1,0 +1,45 @@
+// @mui
+import { Box, Typography, Stack } from '@mui/material';
+// assets
+import { UploadIllustration } from '../../assets';
+
+// ----------------------------------------------------------------------
+
+export default function BlockContent() {
+  return (
+    <Stack
+    display="flex"
+    flexBasis="column"
+      spacing={2}
+      alignItems="center"
+      justifyContent="center"
+      direction={{ xs: 'column' }}
+      sx={{ width: 1, textAlign: { xs: 'center', md: 'left' } }}
+    >
+      <Box>
+      <UploadIllustration sx={{ width: 220 }} />
+      </Box>
+  
+      <Typography gutterBottom variant="h7">
+        آپلود فایل جدید
+        </Typography>
+      {/* <Box sx={{ p: 3 }}>
+        <Typography gutterBottom variant="h5">
+          Drop or Select file
+        </Typography>
+
+        <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+          Drop files here or click&nbsp;
+          <Typography
+            variant="body2"
+            component="span"
+            sx={{ color: 'primary.main', textDecoration: 'underline' }}
+          >
+            browse
+          </Typography>
+          &nbsp;thorough your machine
+        </Typography>
+      </Box> */}
+    </Stack>
+  );
+}
